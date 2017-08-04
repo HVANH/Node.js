@@ -95,7 +95,7 @@
         $('.view').show();
         $('.edit').hide();
     }
-    function save(){
+      function save(){
         $.ajax('/{{user.username}}',{
             method:'PUT',
             data:{
@@ -114,13 +114,12 @@
     function delete(){
         $.ajax('/{{user.username}}',{
             method:'DELETE'
-        }
         complete:function()
-                {
-                    
-                    location:'/'
+                {  
+                    location = '/'
                 }
-    }
+    })
+  }
 </script>
 
 

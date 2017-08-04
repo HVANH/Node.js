@@ -51,7 +51,7 @@ app.put('/:username',(req, res)=>{
     // res.location = req.body
      saveUser(username, req.body)
     // res.end()
-    res.send(req.body)
+    //res.send(req.body)
 })
 
 function getUser(userName)
