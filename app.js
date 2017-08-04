@@ -48,9 +48,10 @@ app.get('/:username', function(req, res){
 app.put('/:username',(req, res)=>{
      var username = req.params.username
      var user = getUser(username)
+     user.location = req.body
     // res.location = req.body
-     saveUser(username, req.body)
-    // res.end()
+     saveUser(username, user)
+     res.end()
     //res.send(req.body)
 })
 

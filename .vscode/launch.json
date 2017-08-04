@@ -6,18 +6,16 @@
     "configurations": [
         {
             "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/app.js"
+        },
+  
+        {
+            "type": "node",
             "request": "attach",
             "name": "Attach",
-            "port": 5858,
-            "restart": true
-        },
-      {
-          "type": "node",
-          "request": "launch",
-          "name": "Launch Program",
-          "program": "${workspaceRoot}/app.js"
-      }
-
-
+            "port": 5858
+        }
     ]
 }
